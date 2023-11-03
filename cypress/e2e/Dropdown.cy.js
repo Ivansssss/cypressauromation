@@ -21,14 +21,14 @@ describe('Dropdown Test Suite',()=>{
         cy.get('.suggestion-title').contains('Delhi University').click()
     })
 
-    it.skip('Dynamic Dropdown', () => {
+    it('Dynamic Dropdown', () => {
 
         cy.visit('http://www.wikipedia.org')
         cy.get('#searchInput').type('Delhi')
         cy.get('.suggestion-title').contains('Delhi University').click()
     })
 
-    it.only('Dynamic Dropdown', () => {
+    it('Dynamic Dropdown', () => {
         cy.visit('http://rahulshettyacademy.com/AutomationPractice/')
         cy.get('#autocomplete').type('us')
         cy.get('.ui-menu-item-wrapper').each(($el, index, $list)=> {
