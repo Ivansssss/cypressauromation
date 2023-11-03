@@ -2,6 +2,9 @@ before (function () {
     cy.log('-----Before the very 1st Test Case---')
 })
 
+beforeEach(function () {
+    cy.log('-----Before each test case---')
+})
 
 after(function () {
     cy.log('-----After last Test Case---')
